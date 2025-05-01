@@ -16,10 +16,16 @@ import addressRouter from './route/address.route.js'
 import orderRouter from './route/order.route.js'
 
 const app = express()
+// app.use(cors({
+//     credentials : true,
+//     origin : process.env.FRONTEND_URL
+// }))
+// i have made some changes here 
 app.use(cors({
-    credentials : true,
-    origin : process.env.FRONTEND_URL
-}))
+    origin: ["http://localhost:5173", "https://lambent-douhua-5ef4e3.netlify.app"],
+    credentials: true
+  }));
+  
 app.use(express.json())
 app.use(cookieParser())
 //app.use(morgan())
