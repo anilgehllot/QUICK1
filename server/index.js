@@ -22,7 +22,7 @@ const app = express()
 // }))
 // i have made some changes here 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://lambent-douhua-5ef4e3.netlify.app"],
+    origin: ["http://localhost:5173", "https://quick-cart-uday.netlify.app/"],
     credentials: true
   }));
   
